@@ -165,7 +165,13 @@ Security::setSalt(Configure::consume('Security.salt'));
 
 /*
  * Setup detectors for mobile and tablet.
+ * To use these detectors run:
+ *
+ * `composer require "mobiledetect/mobiledetectlib:^2.8"`
+ *
+ * Before uncommenting this code.
  */
+/*
 ServerRequest::addDetector('mobile', function ($request) {
     $detector = new \Detection\MobileDetect();
 
@@ -176,6 +182,7 @@ ServerRequest::addDetector('tablet', function ($request) {
 
     return $detector->isTablet();
 });
+*/
 
 /*
  * You can set whether the ORM uses immutable or mutable Time types.
